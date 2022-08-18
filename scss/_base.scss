@@ -19,13 +19,14 @@ html {
 }
 
 body {
-  font-family: 'Helvetical', sans-serif;
+  font-family: "Helvetical Neue", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   font-style: normal;
   line-height: 1.3;
   color: #222;
   background-color: #fff;
+  box-sizing: border-box;
 }
 
 input,
@@ -33,7 +34,7 @@ textarea,
 select,
 button {
   outline: none;
-  font-family: 'Helvetical', sans-serif;
+  font-family: "Helvetical Neue", sans-serif;
   border: 0;
 }
 input {
@@ -65,7 +66,7 @@ img {
 }
 /*===========================================================================*/
 .font-primary {
-  font-family: "Helvetical", sans-serif;
+  font-family: "Helvetical Neue", sans-serif;
 }
 .font-secondary {
   font-family: "Arial", sans-serif;
@@ -85,9 +86,7 @@ img {
 .font-hel500 {
   font-family: "Helvetical Medium", sans-serif;
 }
-.font-helve {
-  font-family: "Helvetical Neue", sans-serif;
-}
+
 /*===========================================================================*/
 .w-800 {
   max-width: 50rem;
@@ -211,6 +210,9 @@ img {
 }
 .text-gray-66 {
   color: #666;
+}
+.text-gray-bd {
+  color: #bdbdbd;
 }
 .text-blue-003 {
   color: #003680;
@@ -691,7 +693,7 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background:#fff;
+  background:transparent;
   border-color:#fff;
   box-shadow: none;
   color: #222;
@@ -747,6 +749,12 @@ img {
 }
 
 /*=================================================================*/
+.w-40px {
+  width: 2.5rem;
+}
+.h-40px {
+  height: 2.5rem;
+}
 .w-48px {
   width: 3rem;
 }

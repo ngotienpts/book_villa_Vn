@@ -1,7 +1,8 @@
 @media (min-width: 64em) and (max-width: 75em) {
   .header,
 .section-content,
-.section-content2 {
+.section-content2,
+.footer-pc {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
@@ -14,24 +15,12 @@
     top: 48%;
   }
 
-  .destination-list {
-    margin-left: 0.9375rem;
-    margin-right: 0.9375rem;
-    padding: 1.25rem;
-  }
-
-  .alphabet {
-    grid-template-columns: repeat(23, 1fr);
-  }
-
   .articles-secondary {
     grid-gap: 5rem;
   }
 
   /*==================================================================================cate*/
-  .detail-header,
-.summer-destination-cate,
-.destination-secondary {
+  .detail-header {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
@@ -63,7 +52,8 @@
 .main-top__bg--pc,
 .event-news__small--des,
 .footer-pc,
-.cate-top-catefory {
+.cate-top-catefory,
+.header-extend-icon-pc {
     display: none;
   }
 
@@ -118,107 +108,6 @@
     padding: 60px 15px 90px 15px;
   }
 
-  .event-news {
-    padding: 2.5rem 0.9375rem;
-    margin-bottom: 0;
-    border-bottom: none;
-  }
-
-  .event-news__large--heading {
-    font-size: 1.25rem;
-    line-height: 26px;
-  }
-
-  .event-news__large {
-    padding-bottom: 0.75rem;
-    border-bottom: 1px solid #d2d2d2;
-  }
-
-  .event-news__small {
-    border-left: none;
-    padding: 0.75rem 0;
-    border-bottom: 1px solid #d2d2d2;
-    display: flex;
-  }
-
-  .event-news__small--img {
-    flex-shrink: 0;
-    width: 35%;
-  }
-
-  .event-news__small--content {
-    width: 65%;
-    flex: 1;
-    padding-left: 0.65rem;
-  }
-
-  .event-news__small--heading {
-    margin-top: 0;
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-
-  .block-field-of-activity {
-    background-image: url(../images/bg2.png);
-    padding: 2.5rem 0 0rem;
-  }
-
-  .field-of-activity__title {
-    padding: 0 0.9375rem;
-    margin-bottom: 0;
-  }
-
-  .field-of-activity__container {
-    width: 100%;
-    padding-left: 0.9375rem;
-    margin-left: 0;
-  }
-
-  .leader-container {
-    justify-content: space-evenly;
-  }
-
-  .block-contact {
-    padding: 2.5rem 0.9375rem 10rem;
-    position: relative;
-  }
-
-  .contact-container iframe {
-    width: 100% !important;
-  }
-
-  .contact-info {
-    width: 100%;
-    top: auto;
-    right: 0;
-    transform: translateY(-50%);
-  }
-
-  .notifi-compani {
-    flex-direction: column;
-  }
-
-  .notifi {
-    order: 2;
-    width: 100%;
-    border-right: none;
-    padding-right: 0;
-  }
-
-  .company {
-    width: 100%;
-    order: 1;
-    padding-left: 0;
-  }
-
-  .block-notifi-company {
-    padding: 2.5rem 0.9375rem;
-  }
-
-  .company-mb__title {
-    padding-bottom: 1.875rem;
-  }
-
   .sub-menu-wrapper {
     min-width: 100%;
   }
@@ -226,14 +115,6 @@
   .navbar-mb {
     display: flex;
     justify-content: center;
-  }
-
-  .leader-container .leader-item + .leader-item {
-    margin-left: 0;
-  }
-
-  .leader-item:nth-child(n+3) {
-    margin-top: 2.5rem;
   }
 
   .footer-mb__logo {
@@ -244,18 +125,51 @@
     padding-top: 2.5rem;
   }
 
+  .list-btn-seclect {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .list-btn-seclect .btn + .btn {
+    margin-left: 0;
+  }
+
+  .articles-item__img {
+    width: 35%;
+    padding-right: 0;
+  }
+
+  .articles-item__content {
+    width: 65%;
+    padding-left: 0.76rem;
+  }
+
+  .articles-item {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #d2d2d2;
+  }
+
+  .articles-item:first-child {
+    padding-top: 0;
+  }
+
+  .articles__small--heading {
+    font-size: 1.25rem;
+    margin-top: 0;
+    line-height: 26px;
+  }
+
   /*===================================================================cate===================*/
   .articles__small--des,
 .articles-secondary__item--des {
     display: none;
   }
 
-  /*===================================================================*/
   .articles-secondary {
     display: block;
   }
 
-  /*===================================================================*/
   .cate-top__text {
     padding: 1.875rem 0.9375rem 4.0625rem 0.9375rem;
   }
@@ -288,8 +202,7 @@
     padding-left: 0.65rem;
   }
 
-  .articles__small--heading,
-.articles-secondary__item--heading {
+  .articles-secondary__item--heading {
     margin-top: 0;
     font-size: 1rem;
     line-height: 1.25rem;
@@ -314,73 +227,6 @@
 
   .articles-secondary__right {
     padding: 1.25rem 0;
-  }
-
-  .foregin-destination .main-top__title {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .foregin-destination-primary {
-    display: block;
-    padding-bottom: 0.75rem;
-    border-bottom: 1px solid #d2d2d2;
-  }
-
-  .summer-destination-cate {
-    padding-top: 1.25rem;
-    border-bottom: none;
-  }
-
-  .foregin-destination-primary .foregin-destination-primary__item:first-child .articles__small--img,
-.foregin-destination-primary .foregin-destination-primary__item:first-child .articles__small--content {
-    width: 100%;
-    padding-left: 0;
-  }
-
-  .foregin-destination-primary .foregin-destination-primary__item:first-child .articles__small--content {
-    margin-top: 1.25rem;
-    padding-bottom: 0.75rem;
-    border-bottom: 1px solid #d2d2d2;
-  }
-
-  .foregin-destination-primary .foregin-destination-primary__item:first-child .articles__small--content .articles__small--heading {
-    font-size: 1.25rem;
-  }
-
-  .foregin-destination-primary .foregin-destination-primary__item:nth-child(2n) {
-    display: flex;
-    padding-top: 0.75rem;
-  }
-
-  .foregin-destination-secondary {
-    padding-top: 0.75rem;
-  }
-
-  /*===================================================================cate tu van===================*/
-  .foregin-destination-primary.advise .foregin-destination-primary__item {
-    display: block;
-  }
-
-  .foregin-destination-primary.advise .foregin-destination-primary__item .articles__small--img,
-.foregin-destination-primary.advise .foregin-destination-primary__item .articles__small--content {
-    width: 100%;
-    padding-left: 0;
-  }
-
-  .foregin-destination-primary.advise .foregin-destination-primary__item .articles__small--content {
-    margin-top: 1.25rem;
-    padding-bottom: 0.75rem;
-    border-bottom: 1px solid #d2d2d2;
-  }
-
-  .foregin-destination-primary.advise .foregin-destination-primary__item .articles__small--content .articles__small--heading {
-    font-size: 1.25rem;
-  }
-
-  .foregin-destination-primary.advise {
-    padding-top: 0;
-    border: none;
   }
 
   /*===================================================================detail===================*/
@@ -449,22 +295,12 @@
     object-fit: cover;
   }
 
-  .destination-list {
-    margin-left: 0.9375rem;
-    margin-right: 0.9375rem;
-    padding: 1.5rem;
-  }
-
-  .alphabet {
-    grid-template-columns: repeat(16, 1fr);
-  }
-
   .main-top__search-travel {
     top: 45%;
   }
 
-  .section-content2,
-.section-content {
+  .section-content,
+.section-content2 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
@@ -475,26 +311,12 @@
     padding-right: 0;
   }
 
-  .hot-traveller-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .picture-video-container .swiper-button-next2,
 .picture-video-container .swiper-button-prev2 {
     top: 48px;
   }
 
-  .summer-destination .swiper-button-next1,
-.summer-destination .swiper-button-prev1 {
-    top: 20px;
-  }
-
   /*===========================================================================cate*/
-  .summer-destination-cate,
-.destination-secondary {
-    padding: 1.25rem 0.9375rem;
-  }
-
   .destination-secondary {
     grid-gap: 1.5rem;
   }
@@ -519,98 +341,22 @@
   }
 
   .main-top__search-travel-block,
-.summer-destination-container,
 .main-top__title,
 .picture-video-container {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 
-  .destination-list {
-    padding: 1.875rem 0.9375rem;
-    margin: 0.9375rem;
-  }
-
-  .destination-list .main-top__title {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .search-list {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .alphabet {
-    grid-template-columns: repeat(7, 1fr);
-  }
-
-  .destination-list .tab-item:nth-child(4) {
-    margin-left: 0;
-  }
-
-  .destination-list .tab-item {
-    margin-bottom: 1rem;
-  }
-
-  .tab-item + .tab-item {
-    margin-left: 1rem;
-  }
-
   .section-content {
     padding-top: 2.5rem;
   }
 
-  .summer-destination .swiper-button-prev1,
-.summer-destination .swiper-button-next1,
-.investors .swiper-button-next3,
-.investors .swiper-button-prev3 {
-    top: 20px;
-  }
-
-  .summer-destination .swiper-button-next1,
-.picture-video-container .swiper-button-next2,
-.investors .swiper-button-next3 {
-    right: 0.9375rem;
-  }
-
-  .summer-destination .swiper-button-prev1,
-.picture-video-container .swiper-button-prev2,
-.investors .swiper-button-prev3 {
+  .picture-video-container .swiper-button-prev2 {
     right: 4rem;
   }
 
   .block-articels .articles-primary {
     padding-top: 0;
-  }
-
-  .section-content2 {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-
-  .hot-traveller-container {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1.875rem;
-    padding: 0 15px;
-  }
-
-  .hot-traveller-img img {
-    width: 7.5rem;
-    height: 7.5rem;
-  }
-
-  .hot-travler-name {
-    font-size: 0.875rem;
-    line-height: 22px;
-    margin-bottom: 0.25rem;
-  }
-
-  .hot-travler-position {
-    font-size: 0.875rem;
-  }
-
-  .hot-traveller .main-top__title {
-    margin-bottom: 0;
   }
 
   .picture-video-container .swiper-button-next2,
@@ -642,33 +388,6 @@
     order: 2;
   }
 
-  .destination-list-cate .tab-item:nth-child(3) {
-    margin-left: 1rem;
-  }
-
-  .destination-list-cate .tab-item:nth-child(4) {
-    margin-left: 0;
-  }
-
-  .destination-list-cate .alphabet {
-    grid-template-columns: repeat(7, 1fr);
-  }
-
-  .destination-list-cate .search-list {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .destination-list-cate {
-    padding: 1.875rem 0.9375rem;
-    width: 100%;
-  }
-
-  .destination-list-cate .main-top__title {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /*===================================================================cate tu van===================*/
   /*===================================================================detail===================*/
   .other-news-wrapper {
     display: block;
@@ -677,26 +396,6 @@
 
   .detail-block {
     padding-bottom: 2.5rem;
-  }
-
-  /*===================================================================detail intro===================*/
-  .detail-intro-block {
-    padding: 0.9375rem;
-  }
-
-  .breadcrumb-detail-intro {
-    justify-content: unset;
-    flex-wrap: nowrap;
-    overflow: auto;
-    white-space: nowrap;
-  }
-
-  .detail-intro-wrapper {
-    background-color: #ffffff;
-  }
-
-  .detail-intro-container {
-    padding: 0;
   }
 }
 

@@ -390,7 +390,7 @@
   color: #fff;
 }
 .search-input {
-  width: 380px;
+  max-width: 380px;
   padding: 11px 40px 11px 16px;
 }
 .section-content {
@@ -410,7 +410,7 @@
 }
 .articles-primary {
   display: grid;
-  grid-template-columns: 1fr 320px 320px;
+  grid-template-columns: 1fr 320px 400px;
   grid-gap: 1.25rem;
   padding: 0 0 4rem 0;
   border-bottom: 1px solid #d2d2d2;
@@ -418,6 +418,25 @@
 .articles__small {
   padding-left: 1.25rem;
   border-left: 1px solid #d2d2d2;
+}
+.articles__small--list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.articles-item {
+  display: flex;
+  width: 100%;
+}
+
+.articles-item__img {
+  width: 50%;
+  flex-shrink: 0;
+  padding-right: 0.625rem;
+}
+.articles-item__content {
+  width: 50%;
+  padding-left: 0.625rem;
 }
 .articles-secondary {
   padding: 1.875rem 0 3.75rem;
@@ -442,6 +461,7 @@
   flex: 1;
   padding-left: 1.25rem;
 }
+
 .btn-see-more {
   display: block;
   margin: auto;
@@ -583,13 +603,16 @@
     right: 2rem;
 }
 .most-interested-apartment,
-.resort {
+.resort,
+.travel-blogs {
   position: relative;
 }
 .most-interested-apartment .swiper-button-next1,
 .most-interested-apartment .swiper-rtl .swiper-button-prev1,
 .resort .swiper-button-next3,
-.resort .swiper-rtl .swiper-button-prev3{
+.resort .swiper-rtl .swiper-button-prev3,
+.travel-blogs .swiper-button-next4,
+.travel-blogs .swiper-rtl .swiper-button-prev4{
   right: 0;
   left: auto;
   top: 25px;
@@ -597,7 +620,9 @@
 .most-interested-apartment .swiper-button-prev1,
 .most-interested-apartment .swiper-rtl .swiper-button-next1,
 .resort .swiper-button-prev3,
-.resort .swiper-rtl .swiper-button-next3 {
+.resort .swiper-rtl .swiper-button-next3,
+.travel-blogs .swiper-button-prev4,
+.travel-blogs .swiper-rtl .swiper-button-next4{
   left: auto;
   right: 3rem;
   top: 25px;
@@ -609,7 +634,11 @@
 .resort .swiper-button-next3,
 .resort .swiper-rtl .swiper-button-prev3,
 .resort .swiper-button-prev3,
-.resort .swiper-rtl .swiper-button-next3 {
+.resort .swiper-rtl .swiper-button-next3,
+.travel-blogs .swiper-button-next4,
+.travel-blogs .swiper-rtl .swiper-button-prev4,
+.travel-blogs .swiper-button-prev4,
+.travel-blogs .swiper-rtl .swiper-button-next4 {
   width: 2.5rem;
   height: 2.5rem;
   background: #F4F6F8;
@@ -623,7 +652,9 @@
 .most-interested-apartment .swiper-button-prev1:after,
 .most-interested-apartment .swiper-rtl .swiper-button-next1:after,
 .resort .swiper-button-prev3:after,
-.resort .swiper-rtl .swiper-button-next3:after {
+.resort .swiper-rtl .swiper-button-next3:after,
+.travel-blogs .swiper-button-prev4:after,
+.travel-blogs .swiper-rtl .swiper-button-next4:after {
   content: "\276E";
   font-size: 1rem;
   color: #828282;
@@ -636,7 +667,9 @@
 .most-interested-apartment .swiper-button-next1:after,
 .most-interested-apartment .swiper-rtl .swiper-button-prev1:after,
 .resort .swiper-button-next3:after,
-.resort .swiper-rtl .swiper-button-prev3:after {
+.resort .swiper-rtl .swiper-button-prev3:after,
+.travel-blogs .swiper-button-next4:after,
+.travel-blogs .swiper-rtl .swiper-button-prev4:after {
   content: "\276F";
   font-size: 1rem;
   color: #0870d1;
@@ -649,7 +682,9 @@
 .most-interested-apartment .swiper-button-next1,
 .most-interested-apartment .swiper-button-prev1,
 .resort .swiper-button-next3,
-.resort .swiper-button-prev3 {
+.resort .swiper-button-prev3,
+.travel-blogs .swiper-button-next4,
+.travel-blogs .swiper-button-prev4 {
   background: #F4F6F8;
   transition: 0.2s;
   -webkit-transition: 0.2s;
@@ -669,4 +704,71 @@
   background-size: cover;
   height: 59px;
   width: 65px;
+}
+.latest-offers-content {
+  position: absolute;
+  left: 3.75rem;
+  bottom: 3.75rem;
+  max-width: 800px;
+}
+.latest-offers-title {
+  font-size: 4rem;
+  font-weight: bold;
+  background: -webkit-linear-gradient(45deg, #8386e4, #2dd5ea 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    line-height: 76px;
+}
+.latest-offers-btn {
+  padding: 13px 24px;
+  background: transparent;
+  border: 1px solid #999;
+}
+select {
+  /* Reset Select */
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 0 1em;
+  background-image: none;
+  cursor: pointer;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select wrapper */
+.select {
+  position: relative;
+  display: inline-flex;
+  overflow: hidden;
+}
+/* Arrow */
+.select::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: '\f0ab';
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transition: .25s all ease;
+  pointer-events: none;
+  color: #C4C4C4;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+/* Transition */
+.select:hover::after {
+  color: #222;
+}
+.select select {
+  padding-right: 30px;
 }

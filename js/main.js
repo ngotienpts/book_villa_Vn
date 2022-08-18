@@ -19,6 +19,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // đếm số lượng 
   var resortCounts = document.querySelectorAll('.resortCount');
+
+  // show popup login
+  var popupLogin = document.querySelector(".popup-login");
+  var openPopupLogin = document.querySelectorAll(".open-login");
+  var closePopupLogin = document.querySelector(".close-popup-login");
+
+  // show search
+  var search = document.querySelector('.search-PC');
+  var openSearch = document.querySelector('.js_show_search');
+
   const app = {
     // su ly cac su kien
     handleEvent: function () {
@@ -71,6 +81,34 @@ document.addEventListener("DOMContentLoaded", function () {
         })
       }
 
+      // show popup login
+      if (openPopupLogin) {
+        openPopupLogin.forEach(function (value) {
+          value.onclick = function () {
+            popupLogin.style.display = "block";
+          };
+        });
+        if (closePopupLogin) {
+          closePopupLogin.onclick = function () {
+            popupLogin.style.display = "none";
+          };
+        }
+      }
+
+      // show search
+      if(openSearch){
+        if(search){
+          openSearch.onclick = function(){
+            if(search.classList.contains('open')){
+              search.classList.remove('open');
+              search.querySelector('.search-PC-input').value = '';
+            }else {
+              search.classList.add('open');
+              search.querySelector('.search-PC-input').focus();
+            }
+          }
+        }
+      }
       // hide cac element khi click ra ngoai
       document.addEventListener("click", function (e) {});
     },
@@ -144,6 +182,24 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       })
     },
+    // slider blogs du lich
+    sliderBlogs: function(){
+      var swiper5 = new Swiper(".mySwiperBlogs", {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        navigation: {
+          nextEl: ".swiper-button-next4",
+          prevEl: ".swiper-button-prev4",
+        },
+        hideOnClick:true,
+        breakpoints: {
+          1024: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+          },
+        },
+      });
+    },
     // slider thư viện ảnh & video
     sliderPicture: function(){
       var swiper4 = new Swiper(".mySwiperPiture", {
@@ -168,6 +224,17 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       });
     },
+    flatpickrForm : function () {
+      $(".datepicker").flatpickr(
+          {
+              wrap: true,
+              /*enableTime: true,*/
+              //altInput: true,
+              dateFormat: "d-m-Y",/*Y-m-d H: i*/
+              allowInput: true,
+              minDate: "today"
+          });
+  },
     // window scroll
     windowScroll: function () {
       var _this = this;
@@ -188,6 +255,9 @@ document.addEventListener("DOMContentLoaded", function () {
       this.sliderMostInterestedApartmanet();
       // slider biệt thự nghỉ dưỡng
       this.sliderResort();
+      // slider blogs du lich
+      this.sliderBlogs();
+      this.flatpickrForm();
     },
   };
 
