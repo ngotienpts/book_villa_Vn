@@ -8,6 +8,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // header
   var header = document.querySelector('#header');
 
+  // main
+  var main = document.querySelector('#main');
+
   // submenu
   var subMenu = document.querySelector('.sub-menu-wrapper');
 
@@ -57,7 +60,9 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         });
         
-        
+        if(header){
+          main.style.paddingTop = header.clientHeight + 'px';
+        }
         if(heightFixed){
           heightFixed.style.height = header.clientHeight + 'px';
         }
@@ -130,15 +135,20 @@ document.addEventListener("DOMContentLoaded", function () {
     // slider căn được đặt nhiều nhất
     sliderMostInterestedApartmanet: function(){
       var swiper1 = new Swiper(".mySwiperPartment", {
-        slidesPerView: 2,
+        slidesPerView: 1,
         slidesPerGroup: 1,
-        spaceBetween: 8,
+        spaceBetween: 15,
         navigation: {
           nextEl: ".swiper-button-next1",
           prevEl: ".swiper-button-prev1",
         },
         hideOnClick:true,
         breakpoints: {
+          768 : {
+            slidesPerView: 2,
+          slidesPerGroup: 1,
+          spaceBetween: 8,
+          },
           1024: {
             slidesPerView: 3,
             spaceBetween: 10,
@@ -152,20 +162,21 @@ document.addEventListener("DOMContentLoaded", function () {
       resortCounts.forEach(function(resortCount){
         var count = Math.floor(resortCount.children.length /2);
         var swiper3 = new Swiper(".mySwiperResort", {
-          slidesPerView: 2,
+          slidesPerView: 1,
+          spaceBetween: 15,
           grid: {
-            rows: 2,
+            rows: 3,
             fill: 'rows',
           },
           navigation: {
             nextEl: ".swiper-button-next3",
             prevEl: ".swiper-button-prev3",
           },
-          spaceBetween: 10,
           hideOnClick:true,
           breakpoints: {
             768: {
               slidesPerView: 2,
+              spaceBetween: 10,
               grid: {
                 rows: (Math.floor(resortCount.children.length /count)),
                 fill: 'rows',
@@ -173,6 +184,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             1024: {
               slidesPerView: 3,
+              spaceBetween: 10,
               grid: {
                 rows: (Math.floor(resortCount.children.length /count)),
                 fill: 'rows',

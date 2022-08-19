@@ -1,5 +1,7 @@
 .main-top__primary {
   position: relative;
+  background:#003680;
+  min-height: 400px;
 }
 .main-top__find-room {
   max-width: 80rem;
@@ -357,7 +359,7 @@
 .navbar-mb__item:first-child::before {
   position: absolute;
   content: "\276F";
-  color: #62dfec;
+  color: #fff;
   top: 50%;
   right: -25px;
   transform: translateY(-50%);
@@ -442,7 +444,7 @@
   padding: 1.875rem 0 3.75rem;
   display: grid;
   grid-template-columns: 1fr 300px;
-  grid-gap: 11.25rem;
+  grid-gap: 2.25rem;
 }
 .articles-secondary__item {
   display: flex;
@@ -454,7 +456,7 @@
   padding-top: 0;
 }
 .articles-secondary__item--img {
-  width: 35%;
+  width: 45%;
   flex-shrink: 0;
 }
 .articles-secondary__item--content {
@@ -771,4 +773,8 @@ select::-ms-expand {
 }
 .select select {
   padding-right: 30px;
+}
+.reset-search-mb,
+.latest-offers-content-mb {
+  display: none;
 }
