@@ -91,7 +91,7 @@
       </div>
     </section>
     <!-- end popup login -->
-    
+
     <!-- header -->
     <header id="header" class="bg-white cd-auto-hide-header">
       <section class="header w-1280 py-15">
@@ -310,8 +310,8 @@
                     Đỗ xe và Wi-Fi luôn miễn phí, vì vậy quý khách có thể giữ liên lạc, đến và đi tùy ý. Nằm ở vị trí trung tâm tại Phước Mỹ của Đà Nẵng, chỗ nghỉ này đặt quý khách ở gần các điểm thu hút và tùy chọn ăn uống thú vị. Hãy nhớ dành một chút thời gian để thăm thú The Marble Mountains cũng như My Khe Beach gần đó. Được xếp hạng 4.5 sao, chỗ nghỉ chất lượng cao này cho phép khách nghỉ sử dụng mát-xa, bể bơi ngoài trời và xông khô ngay trong khuôn viên.
                 </h2>
                 <h3 class="fs-18 fw-700 lh-24 text-blue-003 mb-24">Tiện nghi và cơ sở vật chất</h3>
-                <blockquote class="expNoEdit">  
-                    <div class="bl expEdit">  
+                <blockquote class="expNoEdit">
+                    <div class="bl expEdit">
                         <div class="articles-public font-secondary fs-16 text-gray-66 d-flex align-items-center flex-wrap">
                             <span class="d-flex align-items-center mr-20">
                               <img src="./images/bed.png" alt="" class="mr-10">
@@ -322,7 +322,7 @@
                               Bể bơi ngoài trời
                             </span>
                           </div>
-                    </div>  
+                    </div>
                 </blockquote>
                 <p>
                   Vingroup JSC, Vietnam's largest conglomerate, said on Saturday it
@@ -434,6 +434,45 @@
                 </div>
               </div>
               <!-- end tag lien quan mb -->
+              <!-- đánh giá -->
+              <div class="evaluate">
+                <p class="fs-20 fw-700 lh-32">Bạn đánh giá gì về căn hộ này</p>
+                <ul class="evaluate-list">
+                  <!-- item -->
+                  <li class="evaluate-item">
+                    <img src="./images/star-love.png" alt="" class="evaluate-img">
+                    <span class="evaluate-name">Hiếm có</span>
+                    <span class="fs-18 text-blue-003 evaluate-number fw-700">60</span>
+                    <input type="range" min="0" max="100" value="60" class="evaluate-range">
+                  </li>
+                  <!-- end item -->
+                  <!-- item -->
+                  <li class="evaluate-item">
+                    <img src="./images/star-laugh.png" alt="" class="evaluate-img">
+                    <span class="evaluate-name">Xuất sắc</span>
+                    <span class="fw-700 fs-18 text-blue-003 evaluate-number">6</span>
+                    <input type="range" min="0" max="100" class="evaluate-range" value="10">
+                  </li>
+                  <!-- end item -->
+                  <!-- item -->
+                  <li class="evaluate-item">
+                    <img src="./images/star-sad.png" alt="" class="evaluate-img">
+                    <span class="evaluate-name">Quá tệ</span>
+                    <span class="fw-700 fs-18 text-blue-003 evaluate-number">6</span>
+                    <input type="range" min="0" max="100" class="evaluate-range" aria-colspan="2">
+                  </li>
+                  <!-- end item -->
+                  <!-- item -->
+                  <li class="evaluate-item">
+                    <img src="./images/star-dizzy.png" alt="" class="evaluate-img">
+                    <span class="evaluate-name">Không thích</span>
+                    <span class="fw-700 fs-18 text-blue-003 evaluate-number">6</span>
+                    <input type="range" min="0" max="100" class="evaluate-range" value="30">
+                  </li>
+                  <!-- end item -->
+                </ul>
+              </div>
+              <!-- end đánh giá -->
               <!-- comment -->
               <div class="mb-20 text-center">Load comment cty</div>
               <!-- end comment -->
@@ -520,7 +559,7 @@
                     </div>
                   </div>
                   <!-- end small -->
-                  
+
                 </div>
                 <!-- end villa biệt thự mới nhất -->
             </div>
@@ -641,7 +680,7 @@
       </section>
       <!-- end detail wrapper -->
 
-      
+
 
       <!-- thư viện ảnh & video -->
       <section class="section-content2 picture-video-wrapper">
@@ -804,5 +843,19 @@
     <!-- <script src="./js/header.js"></script> -->
     <script src="./js/flatpickr.js"></script>
     <script src="./js/main.js"></script>
+    <script>
+      const _ranges = document.querySelectorAll('[type=range]');
+      _ranges.forEach(function(_range){
+        _range.style.setProperty('--val', + _range.value);
+        _range.style.setProperty('--max', + _range.max);
+        _range.style.setProperty('--min', + _range.min);
+
+        document.documentElement.classList.add('js');
+
+        _range.addEventListener('input', e => {
+          _range.style.setProperty('--val', + _range.value);
+        }, false);
+      })
+    </script>
   </body>
 </html>

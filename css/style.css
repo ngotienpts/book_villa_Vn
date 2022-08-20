@@ -2281,7 +2281,7 @@ select::-ms-expand {
 .select::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "\f0ab";
+  content: "";
   font-size: 16px;
   position: absolute;
   top: 50%;
@@ -2625,6 +2625,129 @@ blockquote.expNoEdit {
   line-height: 24px !important;
   margin-bottom: 1.5rem !important;
   background: #EDEFF2;
+}
+
+.evaluate-list {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.evaluate-item {
+  width: 86px;
+  background: #F6F6F6;
+  cursor: pointer;
+  padding: 28px 8px 10px;
+  position: relative;
+}
+
+.evaluate-item + .evaluate-item {
+  margin-left: 0.625rem;
+}
+
+.evaluate-name {
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+  font-size: 12px;
+}
+
+.evaluate-number {
+  display: block;
+  text-align: center;
+}
+
+input[type=range] {
+  --range: calc(var(--max) - var(--min));
+  --ratio: calc((var(--val) - var(--min))/var(--range));
+  --sx: calc(.5*1.5em + var(--ratio)*(100% - 1.5em));
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  width: 100%;
+  pointer-events: none;
+  user-select: none;
+}
+
+input[type=range]::-moz-range-track {
+  background: grey;
+  border-radius: 2px;
+  height: 4px;
+  width: 100%;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+input[type=range]::-moz-range-thumb {
+  background: grey;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0.1rem 1rem white;
+  width: 20px;
+  height: 20px;
+}
+
+input[type=range]::-moz-range-progress {
+  background: transparent;
+  border-radius: 0.25rem;
+  height: 4px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  background: grey;
+  background: linear-gradient(#0963C8, #0963C8) 0/var(--sx) 100% no-repeat #d8e1eb;
+  border-radius: 5px;
+  height: 4px;
+  width: 100%;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  margin-top: -5px;
+}
+
+@keyframes star {
+  0% {
+    transform: none;
+  }
+  25% {
+    top: calc(50% - 120px);
+  }
+  50% {
+    top: calc(50% - 57px);
+  }
+  75% {
+    top: calc(50% - 95px);
+  }
+  90% {
+    top: calc(50% - 57px);
+  }
+  100% {
+    transform: rotateY(720deg);
+  }
+}
+.evaluate-img {
+  margin: auto;
+  height: auto;
+  width: 48px;
+  margin-top: -20px;
+  position: absolute;
+  top: calc(50% - 57px);
+  left: calc(50% - 25px);
+}
+
+.evaluate-item:hover .evaluate-img {
+  z-index: 1;
+  animation: star 3s infinite;
+  -webkit-animation: star 3s infinite;
 }
 
 .popup-login {
