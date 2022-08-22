@@ -135,17 +135,6 @@
     width: calc(100% - 30px);
   }
 
-  .latest-offers-content-pc {
-    display: none;
-  }
-
-  .latest-offers-content-mb {
-    display: block;
-    position: relative;
-    left: auto;
-    bottom: auto;
-  }
-
   .articles-secondary {
     display: block;
   }
@@ -164,6 +153,38 @@
   .other-news-wrapper {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
+  }
+
+  .detail-booking-header,
+.detail-booking-title {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+
+  .show-mb {
+    display: block;
+  }
+
+  .booking-map__iframe iframe {
+    width: 100%;
+  }
+
+  /*======================================================================================= cart*/
+  .cart-block {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-left {
+    order: 2;
+  }
+
+  .cart-wrapper .detail-header {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+
+  .detail-wrapper {
+    background: #ffffff;
   }
 }
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
@@ -195,6 +216,11 @@
 
   /*===========================================================================cate*/
   /*===========================================================================detail*/
+  .booking-oder-public {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+  }
 }
 @media (max-width: 46.1875em) {
   .navbar-arrow {
@@ -419,9 +445,30 @@
     text-align: center;
   }
 
+  .pagination-cate {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .pagination-cate .next-page {
+    width: 100%;
+    height: 44px;
+    margin-bottom: 1rem;
+  }
+
+  .pagination-right {
+    text-align: center;
+  }
+
   /*===================================================================detail===================*/
   .detail-container {
     padding: 1.25rem 0.9375rem;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
   }
 
   .other-news-wrapper {
@@ -441,6 +488,232 @@
 
   .main-top__primary {
     min-height: 600px;
+  }
+
+  .detail-des {
+    font-size: 17px;
+    line-height: 27px;
+  }
+
+  .detail-content figure figcaption {
+    padding: 0.625rem 0.9375rem;
+    background: #F6F6F6;
+  }
+
+  .other-news-block-pc,
+.articles-secondary__item--des,
+.detail-header,
+.articles-sidebar-large__des {
+    display: none;
+  }
+
+  .articles-sidebar-large__public-mb {
+    display: block;
+  }
+
+  .other-news-block-mb {
+    display: block;
+    background: #fff;
+  }
+
+  .other-news-wrapper {
+    padding: 1.875rem 0;
+  }
+
+  .other-news__title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0;
+    margin-bottom: 1rem;
+  }
+
+  .articles-secondary__item--content {
+    padding-top: 1.25rem;
+  }
+
+  .articles-secondary__item {
+    padding: 1rem 0;
+  }
+
+  .other-news .articles-secondary__item:nth-child(n+2) {
+    display: flex;
+  }
+
+  .other-news .articles-secondary__item:nth-child(n+2) .articles-secondary__item--img {
+    width: 35%;
+  }
+
+  .other-news .articles-secondary__item:nth-child(n+2) .articles-secondary__item--content {
+    padding-top: 0;
+    padding-left: 0.625rem;
+  }
+
+  .other-news .articles-secondary__item:nth-child(n+2) .articles-secondary__item--content .articles-secondary__item--heading,
+.articles-sidebar-small__heading {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .articles-secondary__item--heading,
+.articles-sidebar-large__heading a,
+.articles-sidebar-small__heading a {
+    font-family: "Helvetical Medium", sans-serif;
+  }
+
+  .pagination-detail {
+    display: none;
+  }
+
+  .see-more-mb {
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #003680;
+    color: #fff;
+    height: 44px;
+    margin-top: 1rem;
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+  }
+
+  .detail-sidebar-title {
+    margin-bottom: 1rem;
+  }
+
+  .articles-sidebar-large {
+    padding-bottom: 1rem;
+  }
+
+  .articles-sidebar-small {
+    padding: 1rem 0;
+  }
+
+  .articles-sidebar-small__img {
+    width: 35%;
+  }
+
+  .articles-sidebar-small__content {
+    padding-left: 10px;
+  }
+
+  .articles-sidebar-small {
+    border-bottom: 1px solid #bdbdbd;
+  }
+
+  .detail-sidebar {
+    padding-bottom: 1.5rem;
+  }
+
+  .booking-oder-public {
+    display: block;
+  }
+
+  .booking-map {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .detail-booking-title {
+    padding-top: 1.25rem;
+  }
+
+  .top-detail-booking {
+    padding: 2.5rem 0.9375rem 0;
+    background: #00224F;
+  }
+
+  .detail-wrapper,
+.detail-booking-wrapper .other-news-block {
+    background: #ffffff;
+  }
+
+  .detail-booking-wrapper .other-news-block {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+
+  .detail-booking-wrapper .other-news-block .other-news__title {
+    text-align: center;
+  }
+
+  .hide-pc {
+    display: block;
+  }
+
+  .hide-mb {
+    display: none;
+  }
+
+  .main-top__title--fix-color {
+    color: #fff;
+  }
+
+  .latest-offers-content-pc {
+    display: none;
+  }
+
+  .latest-offers-content-mb {
+    display: block;
+    position: relative;
+    left: auto;
+    bottom: auto;
+  }
+
+  /*============================================================================================ cart*/
+  .cart-block {
+    padding: 0;
+  }
+
+  .cart-left {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+
+  .cart-item {
+    display: block;
+  }
+
+  .cart-wrapper .detail-header {
+    display: block;
+  }
+
+  .cart-right-block {
+    padding: 15px;
+  }
+
+  .cart-price {
+    text-align: left;
+    font-weight: bold;
+    margin-top: 0.75rem;
+  }
+
+  .btn-confirm {
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .client-info__left {
+    order: 1;
+  }
+
+  .client-info__right {
+    order: 2;
+  }
+
+  .client-info__list {
+    display: block;
+  }
+
+  .client-info__item + .client-info__item {
+    margin-top: 1.5rem;
+  }
+
+  .client-info__title {
+    font-size: 1.25rem;
   }
 }
 

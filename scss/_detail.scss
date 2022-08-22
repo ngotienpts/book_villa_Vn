@@ -164,7 +164,7 @@
     content: "";
 }
 .other-news-block {
-    background: #f4f6f8;
+    background: #edeff2;
 }
 .other-news-wrapper {
     display: grid;
@@ -325,4 +325,23 @@ input[type="range"] {
     z-index: 1;
     animation: star 3s infinite;
     -webkit-animation: star 3s infinite;
+}
+.other-news-block-mb,
+.see-more-mb,
+.articles-sidebar-large__public-mb,
+.show-mb {
+    display: none;
+}
+.booking-oder {
+    background:#EDEFF2;
+    padding: 0.625rem;
+    border-radius: 0.625rem;
+    -webkit-border-radius: 0.625rem;
+    -moz-border-radius: 0.625rem;
+    -ms-border-radius: 0.625rem;
+    -o-border-radius: 0.625rem;
+}
+.booking-map {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
