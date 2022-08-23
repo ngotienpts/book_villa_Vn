@@ -345,3 +345,11 @@ input[type="range"] {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
 }
+.info-right-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+    cursor: pointer;
+}

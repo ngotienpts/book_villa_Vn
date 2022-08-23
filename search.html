@@ -91,7 +91,7 @@
       </div>
     </section>
     <!-- end popup login -->
-    
+
     <!-- header -->
     <header id="header" class="bg-white cd-auto-hide-header">
       <section class="header w-1280 py-15">
@@ -202,77 +202,79 @@
             <div class="main-top__find-room-block">
               <p class="main-top__find-room-title  text-white lh-56 fw-700 fs-36">Nguyen Hieu, kế tiếp bạn muốn đi đến đâu?</p>
               <div class="main-top__search mt-12">
-                <div class="w-100">
-                  <div class="form-group-primary form-group d-flex align-items-center">
-                    <div class="form-item position-relative mr-12">
-                      <input type="text" placeholder="Bạn muốn tìm phòng?" class="h-48px search-input round-99 form-control">
-                      <img src="./images/home.png" alt="" class="position-absolute form-input__icon">
+                <form action="">
+                  <div class="w-100">
+                    <div class="form-group-primary form-group d-flex align-items-center">
+                      <div class="form-item position-relative mr-12">
+                        <input type="text" placeholder="Bạn muốn tìm phòng?" class="h-48px search-input round-99 form-control">
+                        <img src="./images/home.png" alt="" class="position-absolute form-input__icon">
+                      </div>
+                      <div class="form-item position-relative mr-12 datepicker">
+                        <input type="text" placeholder="Ngày nhận phòng" class="h-48px search-input round-99 form-control " name="CheckIn" id="CheckIn" data-input>
+                        <a class="input-button" title="toggle" data-toggle="">
+                            <img src="./images/calender.png" alt="" class="position-absolute form-input__icon">
+                        </a>
+                      </div>
+                      <div class="form-item position-relative mr-12 datepicker">
+                        <input type="text" placeholder="Ngày trả phòng" class="h-48px search-input round-99 form-control " name="CheckOut" id="CheckOut" data-input>
+                        <a class="input-button" title="toggle" data-toggle="">
+                            <img src="./images/calender.png" alt="" class="position-absolute form-input__icon">
+                        </a>
+                      </div>
+                      <button class="see-room btn btn-8-24 btn-blue-003 round-99 fs-16 lh-26">
+                        <a href="#" class="">Xem 24 phòng</a>
+                      </button>
                     </div>
-                    <div class="form-item position-relative mr-12 datepicker">
-                      <input type="text" placeholder="Ngày nhận phòng" class="h-48px search-input round-99 form-control " name="CheckIn" id="CheckIn" data-input>
-                      <a class="input-button" title="toggle" data-toggle="">
-                          <img src="./images/calender.png" alt="" class="position-absolute form-input__icon">
+                    <div class="mt-24 list-btn-seclect">
+                      <div class="btn select">
+                        <select name="LowestPrice" id="LowestPrice" class="fs-16 lh-24 font-secondary btn-8-12 round-99 h-40px pr-20">
+                          <option class="" value="">Giá thấp nhất</option>
+                          <option class="" value="">Giá thấp nhất 2</option>
+                          <option class="" value="">Giá thấp nhất 3</option>
+                          <option class="" value="">Giá thấp nhất 4</option>
+                        </select>
+                      </div>
+                      <div class="btn select">
+                        <select name="HighestPrice" id="HighestPrice" class="round-99 fs-16 lh-24 font-secondary h-40px btn-8-12 ">
+                          <option class="" value="">Giá cao nhất</option>
+                          <option class="" value="">Giá cao nhất 2</option>
+                          <option class="" value="">Giá cao nhất 3</option>
+                          <option class="" value="">Giá cao nhất 4</option>
+                        </select>
+                      </div>
+                      <div class="btn select">
+                        <select name="NumberOfToilets" id="NumberOfToilets" class="round-99 fs-16 lh-24 font-secondary h-40px btn-8-12 ">
+                          <option class="" value="">Số phòng vệ sinh</option>
+                          <option class="" value="">1 WC</option>
+                          <option class="" value="">2 WC</option>
+                          <option class="" value="">3 WC</option>
+                          <option class="" value="">4 WC</option>
+                        </select>
+                      </div>
+                      <div class="btn select">
+                        <select name="Direction" id="Direction" class="round-99 fs-16 lh-24 font-secondary h-40px btn-8-12 ">
+                          <option class="" value="">Hướng</option>
+                          <option class="" value="">Đông</option>
+                          <option class="" value="">Tây</option>
+                          <option class="" value="">Nam</option>
+                          <option class="" value="">Bắc</option>
+                        </select>
+                      </div>
+                      <a href="#" class="reset-search-pc text-white ml-10 lh-24 font-secondary">
+                        Đặt lại toàn bộ tìm kiếm
+                        <i class="fas fa-times-circle"></i>
                       </a>
                     </div>
-                    <div class="form-item position-relative mr-12 datepicker">
-                      <input type="text" placeholder="Ngày trả phòng" class="h-48px search-input round-99 form-control " name="CheckOut" id="CheckOut" data-input>
-                      <a class="input-button" title="toggle" data-toggle="">
-                          <img src="./images/calender.png" alt="" class="position-absolute form-input__icon">
-                      </a>
-                    </div>
-                    <button class="see-room btn btn-8-24 btn-blue-003 round-99 fs-16 lh-26">
-                      <a href="#" class="">Xem 24 phòng</a>
-                    </button>
-                  </div>
-                  <div class="mt-24 list-btn-seclect">
-                    <button class="btn select">
-                      <select name="LowestPrice" id="LowestPrice" class="fs-16 lh-24 font-secondary btn-8-12 round-99 h-40px pr-20">
-                        <option class="" value="">Giá thấp nhất</option>
-                        <option class="" value="">Giá thấp nhất 2</option>
-                        <option class="" value="">Giá thấp nhất 3</option>
-                        <option class="" value="">Giá thấp nhất 4</option>
-                      </select>
-                    </button>
-                    <button class="btn select">
-                      <select name="HighestPrice" id="HighestPrice" class="round-99 fs-16 lh-24 font-secondary h-40px btn-8-12 ">
-                        <option class="" value="">Giá cao nhất</option>
-                        <option class="" value="">Giá cao nhất 2</option>
-                        <option class="" value="">Giá cao nhất 3</option>
-                        <option class="" value="">Giá cao nhất 4</option>
-                      </select>
-                    </button>
-                    <button class="btn select">
-                      <select name="NumberOfToilets" id="NumberOfToilets" class="round-99 fs-16 lh-24 font-secondary h-40px btn-8-12 ">
-                        <option class="" value="">Số phòng vệ sinh</option>
-                        <option class="" value="">1 WC</option>
-                        <option class="" value="">2 WC</option>
-                        <option class="" value="">3 WC</option>
-                        <option class="" value="">4 WC</option>
-                      </select>
-                    </button>
-                    <button class="btn select">
-                      <select name="Direction" id="Direction" class="round-99 fs-16 lh-24 font-secondary h-40px btn-8-12 ">
-                        <option class="" value="">Hướng</option>
-                        <option class="" value="">Đông</option>
-                        <option class="" value="">Tây</option>
-                        <option class="" value="">Nam</option>
-                        <option class="" value="">Bắc</option>
-                      </select>
-                    </button>
-                    <a href="#" class="reset-search-pc text-white ml-10 lh-24 font-secondary">
+                    <a href="#" class="reset-search-mb text-white ml-10 lh-24 font-secondary">
                       Đặt lại toàn bộ tìm kiếm
                       <i class="fas fa-times-circle"></i>
                     </a>
                   </div>
-                  <a href="#" class="reset-search-mb text-white ml-10 lh-24 font-secondary">
-                    Đặt lại toàn bộ tìm kiếm
-                    <i class="fas fa-times-circle"></i>
-                  </a>
-                </div>
+                </form>
               </div>
             </div>
           </div>
-          
+
           <!-- search -->
           <div class="search-PC">
             <form action="" class="d-flex search-PC-form justify-content-between w-100">
@@ -296,25 +298,25 @@
             <div class="cate-search-list">
               <p class="cate-search-title fs-20 text-blue-003 fw-700 lh-26 mb-12">Có 16 kết quả phù hợp</p>
               <div class="mb-24 cate-select-list">
-                <div >
+                <form action="">
                   <div class="mt-24 list-btn-seclect">
-                    <button class="btn select">
+                    <div class="btn select">
                       <select name="LowestPrice" id="LowestPrice" class="bg-gray-f6 fs-16 lh-24 font-secondary btn-8-12 round-99 h-40px pr-20">
                         <option class="" value="">Giá thấp nhất</option>
                         <option class="" value="">Giá thấp nhất 2</option>
                         <option class="" value="">Giá thấp nhất 3</option>
                         <option class="" value="">Giá thấp nhất 4</option>
                       </select>
-                    </button>
-                    <button class="btn select">
+                    </div>
+                    <div class="btn select">
                       <select name="HighestPrice" id="HighestPrice" class="bg-gray-f6 round-99 fs-16 lh-24 font-secondary h-40px btn-8-12 ">
                         <option class="" value="">Giá cao nhất</option>
                         <option class="" value="">Giá cao nhất 2</option>
                         <option class="" value="">Giá cao nhất 3</option>
                         <option class="" value="">Giá cao nhất 4</option>
                       </select>
-                    </button>
-                    <button class="btn select">
+                    </div>
+                    <div class="btn select">
                       <select name="NumberOfToilets" id="NumberOfToilets" class="bg-gray-f6 round-99 fs-16 lh-24 font-secondary h-40px btn-8-12 ">
                         <option class="" value="">Số phòng vệ sinh</option>
                         <option class="" value="">1 WC</option>
@@ -322,8 +324,8 @@
                         <option class="" value="">3 WC</option>
                         <option class="" value="">4 WC</option>
                       </select>
-                    </button>
-                    <button class="btn select">
+                    </div>
+                    <div class="btn select">
                       <select name="Direction" id="Direction" class="bg-gray-f6 round-99 fs-16 lh-24 font-secondary h-40px btn-8-12 ">
                         <option class="" value="">Hướng</option>
                         <option class="" value="">Đông</option>
@@ -331,7 +333,7 @@
                         <option class="" value="">Nam</option>
                         <option class="" value="">Bắc</option>
                       </select>
-                    </button>
+                    </div>
                     <a href="#" class="reset-search-pc ml-10 lh-24 font-secondary">
                       Đặt lại toàn bộ tìm kiếm
                       <i class="fas fa-times-circle"></i>
@@ -341,7 +343,7 @@
                     Đặt lại toàn bộ tìm kiếm
                     <i class="fas fa-times-circle"></i>
                   </a>
-                </div>
+                </form>
               </div>
             </div>
             <!-- end ket qua tim kiem -->
@@ -380,7 +382,7 @@
                     </div>
                     <p class="articles-des font-secondary lh-22 text-gray-44 mt-12">Căn hộ bao gồm 2 phòng ngủ, 1 phòng khách, 1 phòng bếp và lô gia. Được thiết kế với nhiều cửa sổ hướng ra bên ngoài đón gió và ánh sáng tự nhiên, hứa hẹn mang đến không gian sống thoải mái cho cư dân.
                     </p>
-                    
+
                 </div>
                 <!-- end content -->
             </div>
@@ -419,7 +421,7 @@
                     </div>
                     <p class="articles-des font-secondary lh-22 text-gray-44 mt-12">Căn hộ bao gồm 2 phòng ngủ, 1 phòng khách, 1 phòng bếp và lô gia. Được thiết kế với nhiều cửa sổ hướng ra bên ngoài đón gió và ánh sáng tự nhiên, hứa hẹn mang đến không gian sống thoải mái cho cư dân.
                     </p>
-                    
+
                 </div>
                 <!-- end content -->
             </div>
@@ -458,7 +460,7 @@
                     </div>
                     <p class="articles-des font-secondary lh-22 text-gray-44 mt-12">Căn hộ bao gồm 2 phòng ngủ, 1 phòng khách, 1 phòng bếp và lô gia. Được thiết kế với nhiều cửa sổ hướng ra bên ngoài đón gió và ánh sáng tự nhiên, hứa hẹn mang đến không gian sống thoải mái cho cư dân.
                     </p>
-                    
+
                 </div>
                 <!-- end content -->
             </div>

@@ -414,6 +414,18 @@
     justify-content: center;
   }
 
+  .travel-blogs-container-pc {
+    display: none;
+  }
+
+  .travel-blogs-container-mb {
+    display: block;
+  }
+
+  .travel-blogs-container-mb .articles__small {
+    border-bottom: 1px solid #bdbdbd;
+  }
+
   /*===================================================================cate===================*/
   .articles-secondary__item {
     display: block;

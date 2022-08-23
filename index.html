@@ -91,7 +91,7 @@
       </div>
     </section>
     <!-- end popup login -->
-    
+
     <!-- header -->
     <header id="header" class="bg-white cd-auto-hide-header">
       <section class="header w-1280 py-15">
@@ -204,6 +204,8 @@
             <div class="main-top__find-room-block">
               <p class="main-top__find-room-title  text-white lh-56 fw-700 fs-36">Nguyen Hieu, kế tiếp bạn muốn đi đến đâu?</p>
               <div class="main-top__search mt-12">
+                <form action="">
+
                   <div class="form-group-primary form-group d-flex align-items-center">
                     <div class="form-item position-relative mr-12">
                       <input type="text" placeholder="Bạn muốn tìm phòng?" class="h-48px search-input round-99 form-control">
@@ -226,23 +228,23 @@
                     </button>
                   </div>
                   <div class="mt-24 list-btn-seclect">
-                    <button class="btn select">
+                    <div class="btn select">
                       <select name="LowestPrice" id="LowestPrice" class="fs-16 lh-24 font-secondary btn-8-12 round-99 h-40px pr-20">
                         <option class="" value="">Giá thấp nhất</option>
                         <option class="" value="">Giá thấp nhất 2</option>
                         <option class="" value="">Giá thấp nhất 3</option>
                         <option class="" value="">Giá thấp nhất 4</option>
                       </select>
-                    </button>
-                    <button class="btn select">
+                    </div>
+                    <div class="btn select">
                       <select name="HighestPrice" id="HighestPrice" class="round-99 fs-16 lh-24 font-secondary h-40px btn-8-12 ">
                         <option class="" value="">Giá cao nhất</option>
                         <option class="" value="">Giá cao nhất 2</option>
                         <option class="" value="">Giá cao nhất 3</option>
                         <option class="" value="">Giá cao nhất 4</option>
                       </select>
-                    </button>
-                    <button class="btn select">
+                    </div>
+                    <div class="btn select">
                       <select name="NumberOfToilets" id="NumberOfToilets" class="round-99 fs-16 lh-24 font-secondary h-40px btn-8-12 ">
                         <option class="" value="">Số phòng vệ sinh</option>
                         <option class="" value="">1 WC</option>
@@ -250,8 +252,8 @@
                         <option class="" value="">3 WC</option>
                         <option class="" value="">4 WC</option>
                       </select>
-                    </button>
-                    <button class="btn select">
+                    </div>
+                    <div class="btn select">
                       <select name="Direction" id="Direction" class="round-99 fs-16 lh-24 font-secondary h-40px btn-8-12 ">
                         <option class="" value="">Hướng</option>
                         <option class="" value="">Đông</option>
@@ -259,7 +261,7 @@
                         <option class="" value="">Nam</option>
                         <option class="" value="">Bắc</option>
                       </select>
-                    </button>
+                    </div>
                     <a href="#" class="reset-search-pc text-white ml-10 lh-24 font-secondary">
                       Đặt lại toàn bộ tìm kiếm
                       <i class="fas fa-times-circle"></i>
@@ -269,10 +271,11 @@
                     Đặt lại toàn bộ tìm kiếm
                     <i class="fas fa-times-circle"></i>
                   </a>
+                </form>
               </div>
             </div>
           </div>
-          
+
           <!-- search -->
           <div class="search-PC">
             <form action="" class="d-flex search-PC-form justify-content-between w-100">
@@ -739,7 +742,7 @@
               <h3 class="main-top__title fs-32 text-blue-003 fw-700 lh-46 mb-20">Blogs du lịch</h3>
               <!-- end title -->
               <!-- container -->
-              <div class="travel-blogs-container">
+              <div class="travel-blogs-container travel-blogs-container-pc">
                 <div class="swiper mySwiperBlogs">
                   <div class="swiper-wrapper">
                     <!-- item  -->
@@ -979,8 +982,79 @@
                 <div class="swiper-button-prev swiper-button-prev4"></div>
                 <!-- end next prev -->
               </div>
+              <div class="travel-blogs-container travel-blogs-container-mb mb-24 pb-24">
+                <div>
+                  <!-- big news -->
+                  <div class="articles__large">
+                    <!-- img -->
+                    <div class="articles__large--img">
+                        <div class="">
+                          <div class="thumb-img round-10">
+                              <a href="#" class="thumb-item thumb-5x3">
+                              <img class="" src="./images/4.jpg" alt=""></a>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- end img -->
+                    <div class="articles__large--content">
+                        <h3 class="articles__large--heading fs-24 lh-32 mt-20">
+                        <a href="#" class="font-hel500">Du lịch golf Việt Nam tiềm năng hút khách sau Covid-19</a>
+                        </h3>
+                        <p class="articles__large--public font-robo fs-14 text-gray-bd mt-12"><span class="fw-700">Sự kiện</span> &#124; 7h</p>
+                    </div>
+                  </div>
+                  <!-- end big news -->
+                  <!-- small news -->
+                  <div class="articles__small">
+                    <!-- img -->
+                    <div class="articles__small--img">
+                        <div class="">
+                        <div class="thumb-img round-10">
+                            <a href="#" class="thumb-item thumb-5x3">
+                            <img class="" src="./images/4.jpg" alt=""></a>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- end img -->
+                    <div class="articles__small--content">
+                        <h3 class="articles__small--heading fs-24 lh-32 mt-20">
+                        <a href="#" class="font-hel500">Du lịch golf Việt Nam tiềm năng hút khách sau Covid-19</a>
+                        </h3>
+                        <p class="articles__small--public font-robo fs-14 text-gray-bd mt-12"><span class="fw-700">Sự kiện</span> &#124; 7h</p>
+                        <p class="articles__small--des font-secondary lh-22 text-gray-44 mt-12 fs-15">Tọa đàm “Bứt phá doanh thu cuối năm: Lối đi nào cho doanh nghiệp xuất nhập khẩu” phân tích về cơ hội phục hồi và phát triển hậu dịch.</p>
+                    </div>
+                  </div>
+                  <!-- end small news -->
+                  <!-- small news -->
+                  <div class="articles__small">
+                    <!-- img -->
+                    <div class="articles__small--img">
+                        <div class="">
+                        <div class="thumb-img round-10">
+                            <a href="#" class="thumb-item thumb-5x3">
+                            <img class="" src="./images/4.jpg" alt=""></a>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- end img -->
+                    <div class="articles__small--content">
+                        <h3 class="articles__small--heading fs-24 lh-32 mt-20">
+                        <a href="#" class="font-hel500">Du lịch golf Việt Nam tiềm năng hút khách sau Covid-19</a>
+                        </h3>
+                        <p class="articles__small--public font-robo fs-14 text-gray-bd mt-12"><span class="fw-700">Sự kiện</span> &#124; 7h</p>
+                        <p class="articles__small--des font-secondary lh-22 text-gray-44 mt-12 fs-15">Tọa đàm “Bứt phá doanh thu cuối năm: Lối đi nào cho doanh nghiệp xuất nhập khẩu” phân tích về cơ hội phục hồi và phát triển hậu dịch.</p>
+                    </div>
+                  </div>
+                  <!-- end small news -->
+                </div>
+                <!-- xem them -->
+                <div class="see-more-mb see-more-detail-mb">
+                  Xem thêm
+                  <i class="fas fa-chevron-down ml-10"></i>
+                </div>
+                <!-- end xem them -->
+              </div>
               <!-- end container -->
-  
           </div>
         </div>
       </section>

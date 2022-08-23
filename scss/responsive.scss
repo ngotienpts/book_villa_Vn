@@ -121,7 +121,7 @@
   .main-top__find-room {
     width: calc(100% - 30px);
   }
-  
+
   .articles-secondary {
     display: block;
   }
@@ -143,7 +143,7 @@
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
-  
+
   .show-mb {
     display: block;
   }
@@ -164,7 +164,7 @@
   .detail-wrapper {
     background: #ffffff;
 }
-  
+
 }
 
 
@@ -179,7 +179,7 @@
     max-height: 800px;
     object-fit: cover;
   }
-  
+
 .main-top__search-travel {
   top: 45%;
 }
@@ -372,6 +372,15 @@
 }
 .footer-mb__social {
   justify-content: center;
+}
+.travel-blogs-container-pc {
+  display: none;
+}
+.travel-blogs-container-mb {
+  display: block;
+}
+.travel-blogs-container-mb .articles__small {
+  border-bottom: 1px solid #bdbdbd;
 }
   /*===================================================================cate===================*/
   .articles-secondary__item {

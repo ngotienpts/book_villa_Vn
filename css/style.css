@@ -2277,7 +2277,7 @@ select::-ms-expand {
 .select::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "\f0ab";
+  content: "";
   font-size: 16px;
   position: absolute;
   top: 50%;
@@ -2302,7 +2302,8 @@ select::-ms-expand {
 }
 
 .reset-search-mb,
-.latest-offers-content-mb {
+.latest-offers-content-mb,
+.travel-blogs-container-mb {
   display: none;
 }
 
@@ -2776,6 +2777,15 @@ input[type=range]::-webkit-slider-thumb {
   margin-bottom: 2.5rem;
 }
 
+.info-right-img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: auto;
+  cursor: pointer;
+}
+
 .popup-login {
   background: rgba(0, 0, 0, 0.6);
   position: fixed;
@@ -2870,6 +2880,7 @@ h3.popup-login-title {
 }
 
 .cart-block {
+  min-height: 800px;
   padding: 2.5rem;
   background: #fff;
   display: grid;
